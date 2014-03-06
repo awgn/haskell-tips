@@ -2,7 +2,7 @@ Haskell-Tips
 ============
 
 This is a collection of Haskell tips I've gathered reading books, blogs, twitter etc. 
-I use this list as a reminder predominantly.
+I use this list predominantly as a reminder.
 
 ___
 
