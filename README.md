@@ -21,6 +21,7 @@ I use this list as a reminder predominantly.
         Succ   :: Term Int -> Term Int
         IsZero :: Term Int -> Term Bool 
         If     :: Term Bool -> Term a -> Term a -> Term a
+```
 
 * Newtypes can prevent logic errors. To make them easier to work with, use GeneralizedNewtypeDeriving to regain the type instances. (@HaskellTips)
 
@@ -33,6 +34,6 @@ I use this list as a reminder predominantly.
     {-# Language DeriveFunctor #-}
     {-# Language DeriveFoldable #-}
     {-# Language DeriveTraversable #-}
-
+```
 
 
