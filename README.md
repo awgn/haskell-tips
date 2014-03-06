@@ -14,13 +14,13 @@ I use this list as a reminder predominantly.
 * GADTs (http://dev.stephendiehl.com/hask/)
 
 ```haskell
-    {-# LANGUAGE GADTs #-}
+{-# LANGUAGE GADTs #-}
 
-    data Term a where
-        Lit    :: Int -> Term Int
-        Succ   :: Term Int -> Term Int
-        IsZero :: Term Int -> Term Bool 
-        If     :: Term Bool -> Term a -> Term a -> Term a
+data Term a where
+    Lit    :: Int -> Term Int
+    Succ   :: Term Int -> Term Int
+    IsZero :: Term Int -> Term Bool 
+    If     :: Term Bool -> Term a -> Term a -> Term a
 ```
 
 * Newtypes can prevent logic errors. To make them easier to work with, use GeneralizedNewtypeDeriving to regain the type instances. (@HaskellTips)
@@ -28,12 +28,22 @@ I use this list as a reminder predominantly.
 * Generalized deriving - GHC (http://dev.stephendiehl.com/hask/)
 
 ```haskell
-    {-# Language GeneralizedNewtypeDeriving #-}
-    {-# Language StandaloneDeriving #-}
-    {-# Language DeriveDataTypeable #-}
-    {-# Language DeriveFunctor #-}
-    {-# Language DeriveFoldable #-}
-    {-# Language DeriveTraversable #-}
+{-# Language GeneralizedNewtypeDeriving #-}
+{-# Language StandaloneDeriving #-}
+{-# Language DeriveDataTypeable #-}
+{-# Language DeriveFunctor #-}
+{-# Language DeriveFoldable #-}
+{-# Language DeriveTraversable #-}
+```
+
+* Smart Contructor idiom: 
+
+```haskell
+module Test (Test(), mkTest) where
+
+data Test = Test Int
+
+mkTest :: Int -> Test
 ```
 
 
