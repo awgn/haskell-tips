@@ -44,6 +44,8 @@ module Test (Test(), mkTest) where
 data Test = Test Int
 
 mkTest :: Int -> Test
+mkTest n = if n >= 0 then Test n 
+                     else error "mkTest: n < 0"
 ```
 
 
