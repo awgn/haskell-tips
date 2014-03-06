@@ -49,4 +49,6 @@ mkTest n = if n >= 0 then Test n
                      else error "mkTest: n < 0"
 ```
 
+* Haskell performance it's all about seq, BangPatterns, unboxed types, primitive operations, and async.
+
 
