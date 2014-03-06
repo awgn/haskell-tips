@@ -4,6 +4,7 @@ Haskell-Tips
 This is a collection of Haskell tips I've gathered reading books, blogs, twitter etc. 
 I use this list as a reminder predominantly.
 
+
 * ViewPatterns - GHC (https://ghc.haskell.org/trac/ghc/wiki/ViewPatterns)
 
 * Use Show for debugging. Make a Pretty/ToFormat class for pretty pretting/serialization (@HaskellTips)
@@ -19,3 +20,16 @@ I use this list as a reminder predominantly.
         Succ   :: Term Int -> Term Int
         IsZero :: Term Int -> Term Bool 
         If     :: Term Bool -> Term a -> Term a -> Term a
+
+* Newtypes can prevent logic errors. To make them easier to work with, use GeneralizedNewtypeDeriving to regain the type instances. (@HaskellTips)
+
+* Generalized deriving - GHC (http://dev.stephendiehl.com/hask/)
+
+    {-# Language GeneralizedNewtypeDeriving #-}
+    {-# Language StandaloneDeriving #-}
+    {-# Language DeriveDataTypeable #-}
+    {-# Language DeriveFunctor #-}
+    {-# Language DeriveFoldable #-}
+    {-# Language DeriveTraversable #-}
+
+
