@@ -13,7 +13,7 @@ I use this list as a reminder predominantly.
 * GADTs (http://dev.stephendiehl.com/hask/)
 
     {-# LANGUAGE GADTs #-}
-    
+
     data Term a where
         Lit    :: Int -> Term Int
         Succ   :: Term Int -> Term Int
