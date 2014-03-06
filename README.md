@@ -13,6 +13,7 @@ I use this list as a reminder predominantly.
 
 * GADTs (http://dev.stephendiehl.com/hask/)
 
+```haskell
     {-# LANGUAGE GADTs #-}
 
     data Term a where
@@ -25,11 +26,13 @@ I use this list as a reminder predominantly.
 
 * Generalized deriving - GHC (http://dev.stephendiehl.com/hask/)
 
+```haskell
     {-# Language GeneralizedNewtypeDeriving #-}
     {-# Language StandaloneDeriving #-}
     {-# Language DeriveDataTypeable #-}
     {-# Language DeriveFunctor #-}
     {-# Language DeriveFoldable #-}
     {-# Language DeriveTraversable #-}
+
 
 
