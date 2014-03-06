@@ -51,7 +51,7 @@ mkTest n = if n >= 0 then Test n
 
 * Haskell performance it's all about seq, BangPatterns, unboxed types, primitive operations, and async.
 
-* LambdaCase extension
+* LambdaCase extension:
 
 ```haskell
     map (\case 0 -> "zero"; _ -> "not zero") [0,1,2]
