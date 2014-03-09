@@ -79,8 +79,8 @@ data F = F { x :: Int, y :: Int }
 foo F { .. } = x + y
 ```
 
-* If you're unsure how to create a type, see if it has a Default/Monoid instance and use def/mempty to make an arbitrary value.
+* If you're unsure how to create a type, see if it has a Default/Monoid instance and use def/mempty to make an arbitrary value (@HaskellTips).
 
-* Use Show for debugging. Make a Pretty/ToFormat class for pretty printing/serialization.
+* Use Show for debugging. Make a Pretty/ToFormat class for pretty printing/serialization (@HaskellTips).
 
 
