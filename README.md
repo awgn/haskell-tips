@@ -71,3 +71,16 @@ mkTest n = if n >= 0 then Test n
     (***) f g (x,y) = (f x,g y)
     (&&&) f g x = (f x,g x)
 ```
+
+* Use RecordWildCards to introduce all record fields into scope (@HaskellTips):
+
+```haskell
+data F = F { x :: Int, y :: Int }
+foo F { .. } = x + y
+```
+
+* If you're unsure how to create a type, see if it has a Default/Monoid instance and use def/mempty to make an arbitrary value.
+
+* Use Show for debugging. Make a Pretty/ToFormat class for pretty printing/serialization.
+
+
