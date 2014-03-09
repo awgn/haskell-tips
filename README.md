@@ -57,3 +57,17 @@ mkTest n = if n >= 0 then Test n
     map (\case 0 -> "zero"; _ -> "not zero") [0,1,2]
 ```
 
+* NamedFieldPuns can be used to make pattern matches cleaner (@HaskellTips):
+```haskell
+    data F = F {x :: Int, y :: Int}
+    let g F { x } = x + 1 
+```
+
+* The best four things from Control.Arrow (@HaskellTips):
+
+```haskell
+    first f (x,y) = (f x,y)
+    second f (x,y) = (x,f y)
+    (***) f g (x,y) = (f x,g y)
+    (&&&) f g x = (f x,g x)
+```
