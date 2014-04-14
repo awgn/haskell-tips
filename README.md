@@ -1,8 +1,8 @@
 Haskell-Tips 
 ============
 
-This is a collection of Haskell tips I've gathered reading books, blogs, twitter etc. 
-I use this list predominantly as a reminder.
+This is a collection of Haskell tips I've gathered reading books, blogs, tweets etc. 
+I use this list primarily as a reminder.
 
 ___
 
